@@ -1,0 +1,17 @@
+Assignment-2
+~~~~~~~~~~~~
+1. How to display images in title bar?
+
+<head>
+  <link rel="icon" type="image/png" href="path-to-your-favicon"/>
+</head>
+
+2. What is the purpose of "alt" attribute of img tag?
+
+> if an image does not load then then the alt containing the text description of the images gets displayed.
+
+3. Why do we use tbody, thead, tfoot tags?
+
+> The thead, tbody, and tfoot elements in HTML are used to group table rows into logical sections based on their content.
+> To allow the body to be scrolled independently of the header and/or footer
+> To make it easier to apply different style rules to the different sections of the table.
