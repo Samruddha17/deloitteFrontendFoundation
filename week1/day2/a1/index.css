@@ -1,0 +1,44 @@
+.mainContainer{
+    float: left;
+}
+
+.productContainer{
+    border: 2px solid black;
+    margin: 25px;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    padding: 0 20px;
+
+}
+
+.productContainer img{
+    width: 200px;
+}
+.mainContainer .prodName{
+    display: block;
+    color: blue;
+    text-decoration: underline;
+    padding: 5px 0;
+}
+
+.mrp{
+    color: grey;
+}
+.mrp span{
+    text-decoration: line-through;
+    color: red;
+}
+.discPrice{
+    color: green;
+}
+.discPrice span{
+    font-weight: 700;
+}
+
+.brand{
+    color: black;
+}
+.brand span{
+    text-transform: uppercase;
+}
