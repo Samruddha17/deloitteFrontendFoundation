@@ -1,0 +1,58 @@
+.paymentContainer{
+    width: 700px;
+    margin: auto;
+    /* text-align: center; */
+}
+
+.secureMessage{
+    border-style: dotted;
+    background-color: pink;
+    padding: 10px;
+    text-align: center;
+}
+.secureMessage img{
+    width: 20px;
+    margin-right: 10px;
+}
+.secureMessage span{
+    font-size: 20px;
+}
+
+form{
+    padding: 10px 20px;
+    box-shadow: 0px 0px 5px black;
+    background-color: rgb(255, 236, 239);
+}
+form label{
+    font-size: 20px;
+}
+form input{
+    height: 15px;
+    padding: 5px 8px
+}
+form select{
+    height: 25px;
+}
+#cardNumber{
+    width: 50%;
+}
+#expMonth{
+    width: 30%;
+}
+#cvvSpan{
+    font-size: 15px;
+    color: gray;
+
+}
+form input[type="submit"]{
+    height: unset;
+    font-size: 17px;
+    background-color: green;
+    color: white;
+    border: 2px solid green;
+}
+form input[type="submit"]:hover{
+    background-color: pink;
+    color: black;
+    cursor: pointer;
+}

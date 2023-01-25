@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <title>Payment</title>
+</head>
+<body>
+    
+    <div class="paymentContainer">
+        <div class="secureMessage">
+            <img src="https://th.bing.com/th/id/OIP.4jC_Bo1CckhIbkGyhi_L-QHaHa?pid=ImgDet&rs=1" /><span>This is a secure 128 encrypted network </span>
+        </div>
+        <form action="payment.php" method="get">
+            <br></br>
+            <label class="payMethodLabel">
+                <input type="radio" name="payMethod" value="credit/debit" id="payMethod" />Debit / Credit Card
+            </label>
+            <label>
+                <input type="radio" name="payMethod" value="paypal" id="payMethod" />Paypal
+            </label>
+            <br></br>
+            <label>
+                Select Card option: 
+                <select name="cardType">
+                    <option value="debit">Debit</option>
+                    <option value="credit">Credit</option>
+                </select>
+            </label>
+            <br></br>
+
+            <label>
+                Card Number:
+                <input id="cardNumber" type="text" name="cardNumber" placeholder="Enter Card Number" required/>
+            </label>
+            <br></br>
+
+            <label>
+                Expiration Date:
+                <input type="month" name="expMonth" required id="expMonth"/>
+            </label>
+            <br></br>
+
+            <label>
+                CVV: 
+                <input type="password" name="cvv" required/> <span id="cvvSpan">The last 3 digits are displayed on back of your card</span>
+            </label>
+            <br></br>
+
+            <label>
+                Card Name: 
+                <input type="text" name="cardName" placeholder="Enter Card Name" required/>
+            </label>
+            <br></br>
+
+            <h3>Total Amount to be debitted : $69</h3>
+            <input type="hidden" name="selectedMethod" value="newCardDetails" />
+            <input type="submit" name="submit" value="Proceed Payment" />
+            <br></br>
+        </form>
+    </div>
+
+</body>
+</html> 

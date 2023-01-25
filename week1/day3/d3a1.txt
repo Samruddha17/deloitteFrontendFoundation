@@ -1,0 +1,17 @@
+1. Why do we use value attribute of <option> tag?
+
+> The value attribute for <option> tag in HTML is used to specify the value of the option element. 
+> It contains single value which has to be sent to the server. 
+
+2. What is <input type="hidden"  />  ? Why do we use?
+
+> A hidden field lets web developers include data that cannot be seen or modified by users when a form is submitted.
+> A hidden field often stores what database record that needs to be updated when the form is submitted.
+
+3. Diff. between  <input type="submit"  />   and <button></button>  ?
+
+<input type=”button” /> buttons will not submit a form – they don’t do anything by default.
+They’re generally used in conjunction with JavaScript as part of an AJAX application.
+
+<input type=”submit”> buttons will submit the form they are in when the user clicks on them, unless you specify otherwise with JavaScript.
+

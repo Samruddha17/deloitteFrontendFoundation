@@ -1,0 +1,79 @@
+.mainContainer{
+    width: 450px;
+    padding: 25px 50px;
+    margin: auto;
+    background-image: url("https://th.bing.com/th/id/OIP.JiUxaIr27OWiPsrg00M0CAAAAA?pid=ImgDet&w=280&h=280&rs=1");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.infoContainer{
+    background-color: rgb(254, 208, 122);
+    padding: 5px 10px;
+    text-align: center;
+}
+.infoContainer h2{
+    text-transform: uppercase;
+}
+.formContainer{
+    padding: 20px;
+    padding-top: 1px;
+    background: #f0f0f0d4;
+}
+.formContainer label{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+input[type="email"]{
+    display: block;
+    padding: 7px;
+    /* margin:  10px 0; */
+    width: 50%;
+}
+form h3{
+    margin: 5px 10px;
+    margin-left: 0;
+    padding-top: 15px;
+}
+#cCode, #phoneNum{
+    padding: 7px;
+}
+#cCode{
+    width: 17%;
+}
+select{
+    padding: 7px;
+    width: 40%;
+}
+.agreeTerms{
+    display: block;
+    padding-top: 50px;
+}
+
+input[type="submit"]{
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(255, 87, 87);
+    border: none;
+    margin-top: 5px;
+    cursor: pointer;
+
+}
+.toppings{
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"]{
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+.submitDiv{
+    width: 100%;
+    text-align: center;
+}
+.submitDiv label{
+    padding-top: 10px;
+}
