@@ -1,0 +1,10 @@
+1. Can we apply more than one css class to html tags?  If yes, how to implement?
+
+> Yes we can apply. In the class attribute add the classname with a space ahead of the previous class name
+ eg: class="class1 class2"
+
+
+2.  How to hide an element using CSS?
+
+> Setting opacity = 0;
+> Setting display = "none";
