@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div itemscope itemtype="https://schema.org/Hotel">
+        <h1><span itemprop="name">Restaurant and Logo</span></h1>
+        <img itemprop="logo" src="https://th.bing.com/th/id/OIP.gTrVNThynu-gceBY50MPxwHaFB?pid=ImgDet&rs=1" alt="hotel logo" />
+        <br>
+        <span itemprop="description">A beautifully located business hotel right in the
+      heart of the alps. Watch the sun rise over the scenic Inn valley while
+      enjoying your morning coffee.</span>
+    </div>
+
+    <div itemscope itemtype="https://schema.org/Movies">
+        <h1>Movies</h1>
+        <span itemprop="name">Angry Birds</span> - REQUIRES
+        <span itemprop="operatingSystem">ANDROID</span><br />
+        <link
+            itemprop="applicationCategory"
+            href="https://schema.org/GameApplication" />
+
+        <div
+            itemprop="aggregateRating"
+            itemscope
+            itemtype="https://schema.org/AggregateRating">
+            RATING:
+            <span itemprop="ratingValue">4.6</span> (
+            <span itemprop="ratingCount">8864</span> ratings )
+        </div>
+
+        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            Price: $<span itemprop="main-price">5.00</span>
+            Price: $<span itemprop="disc-price">4.99</span>
+
+            <meta itemprop="priceCurrency" content="USD" />
+        </div>
+    </div>
+
+
+    <div itemscope itemtype="https://schema.org/Person">
+        <h1>Person and URL</h1>
+        <span itemprop="name">Jane Doe</span>
+        <img src="https://webstockreview.net/images/man-clipart-4.png" itemprop="image" alt="Photo of Jane Doe"/>
+      
+        <span itemprop="jobTitle">Professor</span>
+        <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span itemprop="streetAddress">
+            20341 Whitworth Institute
+            405 N. Whitworth
+          </span>
+          <span itemprop="addressLocality">Seattle</span>,
+          <span itemprop="addressRegion">WA</span>
+          <span itemprop="postalCode">98052</span>
+        </div>
+        <span itemprop="telephone">(425) 123-4567</span>
+        <a href="mailto:jane-doe@xyz.edu" itemprop="email">
+          jane-doe@xyz.edu</a>
+
+          Jane's home page:
+        <a href="http://www.janedoe.com" itemprop="url">janedoe.com</a>
+    
+      </div>
+
+
+      <div itemscope itemtype="https://schema.org/Place">
+        <h1>Place</h1>
+        <h2>What is the latitude and longitude of the <span itemprop="name">Empire State Building</span>?</h2>
+        Answer:
+        <div itemprop="geo" itemscope itemtype="https://schema.org/GeoCoordinates">
+          Latitude: 40 deg 44 min 54.36 sec N
+          Longitude: 73 deg 59 min 8.5 dec W
+          <meta itemprop="latitude" content="40.75" />
+          <meta itemprop="longitude" content="-73.98" />
+        </div>
+      </div>
+    
+</body>
+</html>

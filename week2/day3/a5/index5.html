@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas conext 2d</title>
+</head>
+<body>
+    
+    <div class="contaner">
+        <canvas style="border: 2px solid black;" width="500" height="500" id="myCanvas"></canvas>
+    </div>
+
+    <script>
+        let canvas = document.getElementById("myCanvas");
+
+        var heightArray = [300, 234, 194, 50, 423, 342, 499, 262]
+
+        var ctx = canvas.getContext("2d");
+        var x = 20
+
+        for(var i=0; i<heightArray.length; i++){
+            ctx.beginPath();
+            ctx.moveTo(100, 100);
+            ctx.fillStyle = "blue";
+            ctx.fillRect(x, 500, 40, -heightArray[i]);
+            x+=60;
+        }
+
+    </script>
+</body>
+
+</html>
