@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3>Storing User Preferences in LocalStorage</h3>
+		<hr/>
+		
+		
+		<fieldset>
+			<legend>Eployee Data</legend>
+			
+			Emplyee Id  :  <input type="text" id="uid"  name="uid"  />
+			<br/><br/>
+			
+			Employee Email  :  <input type="text" id="email"  name="email"  />
+			<br/><br/>
+			
+			Dept name  :  <input type="text"  id="dept"  name="dept"  />
+			<br/><br/>
+
+            Dept Location  :  <input type="text"  id="loc"  name="loc"  />
+			<br/><br/>
+			
+			<input type="button"  value="Convert to JSON"   onclick="fn_saveData()" />
+			
+		</fieldset>
+		
+		<br/><br/>
+		
+        <fieldset>
+		
+			<input type="button"  value="get data"   onclick="fn_getData()" />
+			
+			<p  id="p1"></p>
+			
+			
+		</fieldset>
+
+    <script>
+        
+        // localStorage.removeItem("employeeArr");
+        var employeeArr = []
+        console.log(employeeArr)
+
+
+        function fn_saveData(){
+            if(localStorage.getItem("emplyeeArr")){
+
+
+                var  txtUidObj =  document.getElementById("uid");	
+		        var  txtEmailObj =  document.getElementById("email");	
+		        var  txtDeptObj =  document.getElementById("dept");						
+		        var  txtLocObj =  document.getElementById("loc");						
+				
+		        // 2.  Create object with input fields values 					
+		        var  userObj =  { };
+		        userObj.uid =  txtUidObj.value; 
+		        userObj.email =  txtEmailObj.value; 
+		        userObj.dept =  txtDeptObj.value; 
+		        userObj.loc =  txtLocObj.value; 
+
+
+				var str = localStorage.getItem("emplyeeArr");
+                var allEmplyees = JSON.parse(str);
+                allEmplyees.push(userObj);
+
+                var  newStr  =  JSON.stringify( employeeArr );
+				localStorage.setItem("employeeData",  newStr);
+				alert("Employee details are stored in localStorage");
+            }
+            else{
+
+
+                var  txtUidObj =  document.getElementById("uid");	
+	            var  txtEmailObj =  document.getElementById("email");	
+		        var  txtDeptObj =  document.getElementById("dept");						
+		        var  txtLocObj =  document.getElementById("loc");						
+				
+		         // 2.  Create object with input fields values 					
+		        var  userObj =  { };
+		        userObj.uid =  txtUidObj.value; 
+		        userObj.email =  txtEmailObj.value; 
+		        userObj.dept =  txtDeptObj.value; 
+		        userObj.loc =  txtLocObj.value; 
+
+                employeeArr.push(userObj);
+                console.log(employeeArr);
+                var  str  =  JSON.stringify( employeeArr );
+				localStorage.setItem("employeeData",  str);
+				alert("Employee details are stored in localStorage");
+
+            }
+        }
+
+
+        function fn_getData()
+				{	
+					var  str =  localStorage.getItem("employeeData");			
+						
+					var paraObj =  document.getElementById("p1");
+					  paraObj.innerHTML = str;
+
+                      
+					var  userObj =  JSON.parse(str);
+					
+										
+					// 3.  Access html elements to display user data
+					
+					if(  str ==  null )
+					{
+							alert("There is no user data in localStorage");							
+							return;   //  exit from the function 
+					}
+					
+
+								 
+
+				}			
+
+    </script>
+</body>
+</html>

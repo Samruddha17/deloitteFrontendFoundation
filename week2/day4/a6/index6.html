@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <fieldset>
+		
+        <input type="button"  value="get data"   onclick="fn_getData()" />
+        
+        
+
+
+        
+        
+    </fieldset>
+
+    <script>
+        var flag = false
+
+        function fn_getData(){
+
+            if(!flag){
+                
+                var  str  =  '{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"}';
+        
+                var obj = JSON.parse(str);
+                document.body.innerHTML += `<h2>User Id : ${obj.id}</h2>
+                <h2>First Name : ${obj.first_name}</h2>
+                <h2>Last Name : ${obj.last_name}</h2>
+                <h2>EmailUser Id : ${obj.email}</h2> 
+                <h2>Avatar</h2><img src=${obj.avatar} />`;
+                flag = true;
+            }
+
+
+
+            
+        }
+
+    </script>
+</body>
+</html>
