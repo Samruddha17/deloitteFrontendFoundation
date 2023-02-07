@@ -1,0 +1,17 @@
+1] How to add or remove css classes to html elements using Js?
+
+> Use document.getElementsByClassName("elemClass").classlist.add("className");
+
+2] what is CDN and why is t used?
+
+> A content delivery network (CDN) is a network of interconnected servers that speeds up webpage loading for data-heavy applications
+> A content delivery network (CDN) is a group of geographically distributed servers that speed up the delivery of web content by bringing it closer to where users are.	
+> The mission of a CDN is to reduce latency.
+> Without CDNs, with their ability to replicate and store information from origin servers and then bring digital content close to where users access the web, the internet might be slowed to a crawl.
+> A CDN balances overall traffic to give everyone accessing internet content the best web experience possible.
+> No need to download files can access directly from the severs.
+> Provides with the latest and updated files.
+
+3] How to align justify using Bootstrap?
+
+>align-content-center, text-center
