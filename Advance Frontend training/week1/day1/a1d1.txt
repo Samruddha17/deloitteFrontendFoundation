@@ -1,0 +1,7 @@
+1. What are the popup boxes in javascript?
+>> alert, confirm, promt
+
+2. What is JavaScript engine for Safari?
+>> JavaScriptCore
+
+5.

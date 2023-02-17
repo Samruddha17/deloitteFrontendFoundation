@@ -1,0 +1,61 @@
+<html>
+	<head></head>
+	<body>
+		<h3>JavaScript Programming -- Control Structures </h3>
+		<hr/>
+		 
+		Select City Code  :  
+		<select id="s1">
+			<option>HYD</option>
+			<option>BLR</option>
+			<option>MUM</option>
+			<option>GUR</option>
+		</select>
+		 
+		<input  type="button"  value="Get Branch Details"  onclick="fn_getData()"  />
+		<p  id="p1"></p>
+		 </fieldset>		
+		<script>		
+				function  fn_getData()
+				{
+					var  paraObj  =  document.getElementById("p1");		
+					var  selectObj  =  document.getElementById("s1");	
+            				
+					
+				switch( selectObj.value  )
+				{ 
+							case "HYD" :  {
+                                var str = "<h2>Hyderabad | " + selectObj.value + "</h2><h3>Hyderabad Towers </h3>";
+                                str += "<img src='https://th.bing.com/th/id/OIP.aqSVE7TUcbsLCQdF_FPfRgHaEK?w=274&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7' />";
+                                paraObj.innerHTML = str;  
+                                break; 
+                            }  	
+														
+							case "BLR" : {
+                                var str = "<h2>Banglore | " + selectObj.value + "</h2><h3>Banglore Towers </h3>";
+                                str += "<img src='https://th.bing.com/th/id/OIP.tQXg8jDcCZTzRYSpRrmXtwHaEK?w=273&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7' />";
+                                paraObj.innerHTML = str;  
+                                break; 
+                            }
+														
+							case "MUM" : {
+                                var str = "<h2>MUmbai | " + selectObj.value + "</h2><h3>Fairmount Powai </h3>";
+                                str += "<img src='https://th.bing.com/th/id/OIP.3NgeZqA0gbnFBYox7FRzGwHaEo?w=275&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7' />";
+                                paraObj.innerHTML = str;  
+                                break; 
+                            }
+							
+							case "GUR" :    	{
+                                var str = "<h2>urgoan | " + selectObj.value + "</h2><h3>Gurgoan Towers </h3>";
+                                str += "<img src='https://th.bing.com/th/id/OIP.Z_PIeIRDajXPmZHROt-T_QHaEK?w=318&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7' />";
+                                paraObj.innerHTML = str;  
+                                break; 
+                            }
+					}
+						 
+					
+				}		
+		</script>
+		 
+	</body>
+</html>

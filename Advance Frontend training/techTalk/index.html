@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Talk</title>
+</head>
+<body>
+    
+    <button onclick="mathProps()">Using Math Properties</button>
+    <h3 id="output1"></h3>
+    <button onclick="mathRound()">Using Math Round</button>
+    <h3 id="output2"></h3>
+    <button onclick="mathCeil()">Using Math Ceil</button>
+    <h3 id="output3"></h3>
+    <button onclick="mathFloor()">Using Math Floor</button>
+    <h3 id="output4"></h3>
+    <button onclick="mathPow()">Using Math Power</button>
+    <h3 id="output5"></h3>
+    <button onclick="mathSqrt()">Using Math Sqrt</button>
+    <h3 id="output6"></h3>
+    <button onclick="mathMin()">Using Math Min</button>
+    <h3 id="output7"></h3>
+
+</body>
+
+    <script>
+        function mathProps(){
+            document.getElementById("output1").innerHTML = `Math.PI = ${Math.PI}, Math.E = ${Math.E}`
+        }
+
+        function mathRound(){
+            document.getElementById("output2").innerHTML = `Rounding 2.7 = ${Math.round(2.7)}`
+        }
+
+        function mathCeil(){
+            document.getElementById("output3").innerHTML = `Rounding 2.3 = ${Math.ceil(2.3)}`
+        }
+
+        function mathFloor(){
+            document.getElementById("output4").innerHTML = `Rounding 2.3 = ${Math.floor(2.3)}`
+        } 
+
+        function mathPow(){
+            document.getElementById("output5").innerHTML = `2^3 = ${Math.pow(2,3)}`
+        } 
+
+        function mathSqrt(){
+            document.getElementById("output6").innerHTML = `Square root of 9 = ${Math.sqrt(9)}`
+        } 
+        
+        function mathMin(){
+            document.getElementById("output7").innerHTML = `Min of (5,2,6,2,5,3,1) = ${Math.min(5,2,6,2,5,3,1)}`;        }   
+    </script>
+
+</html>

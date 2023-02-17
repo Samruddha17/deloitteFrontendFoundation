@@ -1,0 +1,16 @@
+1. Is it possible to disable JavaScript in browser?  If yes, How to disable javascript in browser?
+>> Yes possible to display js in browser. 
+
+2. What is the difference between undefined and not defined in JavaScript?
+>>The main difference between " undefined " and " not defined " is that " undefined " is a value that can be assigned to a variable, while "not defined" indicates that a variable does not exist.
+
+3. Difference between ==  and ===?
+>> Double equals first convert the operands into the same type and then compare i.e comparison would perform once both the operands are of the same type. This is also known as type coercion comparison.
+>> On the other hand, triple equals do not perform any type of conversion before comparison and return true only if type and value of both operands are exactly the same.
+
+4. What does the isNaN() function?
+>>The isNaN () function is used to check whether a given value is an illegal number or not. It returns true if value is a NaN else returns false. It is different from the Number.isNaN () Method.
+
+5. Difference between Client side JavaScript and Server side JavaScript?
+>> Client side mainly uses HTML, CSS while server side uses ExpressJs and NodeJs.
+>> Client side get/ fetches data from server side using api to show it in the HTML.

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Operations</title>
+</head>
+<body>
+
+    <form>
+        First Number:  <input type="numer" id="first"  name="first" value=0  required/>
+        <br/><br/>
+        
+        Second Number :  <input type="number" id="second"  name="second" value="0"  required/>
+        <br/><br/>
+     
+        <input type="button"  value="Add" onclick="fn_math()" />
+        <input type="button"  value="Sub" onclick="fn_math()" />
+        <input type="button"  value="Mul" onclick="fn_math()" />
+        <input type="button"  value="Div" onclick="fn_math()" />
+
+        
+        <p>Result : <span id="output">0</span></p>
+    </form>
+    
+    <script>
+        function fn_math(){
+            if(event.target.value == "Add"){
+                var math = parseInt(document.getElementById("first").value) + parseInt(document.getElementById("second").value);
+                document.getElementById("output").innerHTML = math;
+
+            }
+            if(event.target.value == "Sub"){
+                var math = parseInt(document.getElementById("first").value) - parseInt(document.getElementById("second").value);
+                document.getElementById("output").innerHTML = math;
+
+            }
+            if(event.target.value == "Mul"){
+                var math = parseInt(document.getElementById("first").value) * parseInt(document.getElementById("second").value);
+                document.getElementById("output").innerHTML = math;
+
+            }
+            if(event.target.value == "Div"){
+                var math = parseInt(document.getElementById("first").value) / parseInt(document.getElementById("second").value);
+                document.getElementById("output").innerHTML = math;
+
+            }
+            
+        }
+
+    </script>
+</body>
+</html>

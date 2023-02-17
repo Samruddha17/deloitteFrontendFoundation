@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            border: 2px solid blue;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        h3{
+            color: red;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <button onclick="uppercase()">Convert to Uppercase</button>
+    <h3 id="uppercase"></h3>
+    <button onclick="threeChars()">Get Substring</button>
+    <h3 id="subStr"></h3>
+    <button onclick="replace()">Convert a to @</button>
+    <h3 id="replace"></h3>
+
+
+    <script>
+
+        var citiesArray  = [ "Hyderabad", "Mumbai",  "Bangalore", "Gurgaon"];
+        function uppercase(){
+            var arr = citiesArray.map(setCase)
+            document.getElementById("uppercase").innerHTML = arr;
+            
+            function setCase(city){
+                return city.toUpperCase();
+            }
+        }
+
+        function threeChars(){
+            var arr = citiesArray.map(function(city){
+                return city.substring(0,3);
+            })
+            document.getElementById("subStr").innerHTML = arr;
+        }
+
+        function replace(){
+            var arr = citiesArray.map((elem)=>{
+                return elem.replaceAll("a", "@");
+            })
+            document.getElementById("replace").innerHTML = arr;
+        }
+
+
+    </script>
+</body>
+</html>

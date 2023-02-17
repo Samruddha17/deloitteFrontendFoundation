@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="dateFunc()">Using Date Object</button>
+    <h3 id="output1"></h3>
+
+    <button onclick="dateFunc2()">Adding date as string</button>
+    <h3 id="output2"></h3>
+
+    <button onclick="loc()">Location Details</button>
+    <h3 id="output3"></h3>
+
+
+    <script>
+        function dateFunc(){
+            var date = Date();
+            document.getElementById("output1").innerHTML = `Date is ${date}`
+        }
+        function dateFunc2(){
+            const d = new Date("17 December, 2022");
+            document.getElementById("output2").innerHTML = d;
+        }
+
+        function loc(){
+            var x = location.hostname;
+            var y = location.href;
+            var z = location.protocol;
+            var a = location.host;
+            var b = location.pathname;
+            document.getElementById("output3").innerHTML += "Host Name is : " + x +"<br>";
+            document.getElementById("output3").innerHTML += "Host URL is : " + y +"<br>";
+            document.getElementById("output3").innerHTML += "Host Protocol is : " + z +"<br>";
+            document.getElementById("output3").innerHTML += "Host is : " + a +"<br>";
+            document.getElementById("output3").innerHTML += "Host Pathname is : " + b +"<br>";
+            
+        }
+    </script>
+
+</body>
+</html>

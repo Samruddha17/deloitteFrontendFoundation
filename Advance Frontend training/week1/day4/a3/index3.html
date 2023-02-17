@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding: 10px 20px;
+            background-color: white;
+            color: black;
+            font-size: 17px;
+            border: 2px solid black;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        input{
+            margin: 20px;
+            font-size: 17px;
+        }
+        div{
+            margin: 10px;
+            border: 2px solid blue;
+            width: max-content;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <h2>Given array is "[2,3,5,2,4,8,4,3,6,9,1]"</h2>
+        <button onclick="getEven()">Get total no. of even numbers</button>
+        <h2 id="even"></h2> 
+    </div>
+
+    <div>
+        Enter Number : <input type="number" id="num1" />
+        <br>
+        Enter Power : <input type="number" id="num2" />
+        <br>
+        <button onclick="power()">Get power of x^y</button>
+        <h2 id="power"></h2>
+    </div>
+
+    <div>
+        Enter Text : 
+        <textarea id="textarea"></textarea>
+        <br>
+        <button style="margin-top: 20px;" onclick="getWords()">Get number of words</button>
+        <h2 id="words"></h2>
+    </div>
+
+    <script>
+        function getEven(){
+            var arr = [2,3,5,2,4,8,4,3,6,9,1];
+            const result = arr.filter((num)=>{
+                return num%2 == 0;
+            });
+            document.getElementById("even").innerHTML = "Total no. of even numbers are " + result.length;
+        }
+
+        function power(){
+            var x = document.getElementById("num1").value;
+            var y = document.getElementById("num2").value;
+            var result = Math.pow(x,y);
+            document.getElementById("power").innerHTML = "Result is : " + result;
+        }
+
+        function getWords(){
+
+            var text = document.getElementById("textarea").value;
+            let array1 = text.split(' ');
+            document.getElementById("words").innerHTML = "No. of words are : " + array1.length;
+
+        }
+        
+
+    </script>
+</body>
+</html>

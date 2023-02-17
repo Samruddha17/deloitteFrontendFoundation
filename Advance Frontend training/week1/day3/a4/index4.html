@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic form</title>
+    <style>
+        th{
+            padding: 5px;
+            background-color: lightgreen;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 
+    <button id="next" onclick="next()">Next</button>
+     -->
+
+    <table id="table">
+        <tr>
+            <th>Couse</th>
+            <th>Couse</th>
+            <th>Couse</th>
+            <th>Couse</th>
+        </tr>
+    </table>
+
+    <script>
+
+        var arr=['HTML', 'CSS', 'jQuery', 'AngularJs', 'ReactJs'];
+        var i =0;
+        var table = document.getElementById("table");
+         var cols = 4;
+         var arrPos = 0;
+         for(i=0; i<4; i++){
+             table.innerHTML += "<tr id=" + i + "></tr>";
+                 for(var j=0; j<cols; j++){    
+                    if(i==3 && j==3){
+                        break;
+                    }
+                    document.getElementById(i).innerHTML += "<td> " + arr[arrPos] + "</td>";
+                    arrPos++;
+                     if(arrPos > 4){
+                         arrPos= 0;
+                     }
+                 }
+         }
+
+       
+    </script>
+
+</body>
+</html>

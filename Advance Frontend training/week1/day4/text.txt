@@ -1,0 +1,26 @@
+1. What is map()? and its use?
+>> The Javascript map() method in JavaScript creates an array by calling a specific function on each element present in the parent array. It is a non-mutating method.
+>> Generally, the map() method is used to iterate over an array and calling function on every element of the array.
+>> Parameters: This method accepts two parameters as mentioned above and described below:
+--function(currentValue, index, arr):
+--Return Value: It returns a new array and elements of arrays are the result of the callback function. 
+
+2. 
+
+Filter()
+>>The filter() method basically outputs all the element object that pass a specific test or satisfies a specific function.
+>>The return type of the filter() method is an array that consists of all the element(s)/object(s) satisfying the specified function. 
+>>Parameters:
+--Callback is a predicate, to test each object of the array. Returns True to keep the object, False otherwise. It takes in three arguments:
+--Object: The current object being processed in the array.
+
+Find()
+>>The find() method returns the value of the first element that passes a test.
+>>The find() method executes a function for each array element.
+>>The find() method returns undefined if no elements are found.
+
+FindIndex()
+>>The findIndex() method executes a function for each array element.
+>>The findIndex() method returns the index (position) of the first element that passes a test.
+>>The findIndex() method returns -1 if no match is found.
+

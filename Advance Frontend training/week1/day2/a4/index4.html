@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Operations</title>
+</head>
+<body>
+
+    <form>
+        First Number:  <input type="numer" id="first"  name="first" value=0  required/>
+        <br/><br/>
+        
+        Second Number :  <input type="number" id="second"  name="second" value="0"  required/>
+        <br/><br/>
+     
+        <input type="button"  value="Add" onclick="fn_add()" />
+        <input type="button"  value="Sub" onclick="fn_sub()" />
+        <input type="button"  value="Mul" onclick="fn_mul()" />
+        <input type="button"  value="Div" onclick="fn_div()" />
+
+        
+        <p>Result : <span id="output">0</span></p>
+    </form>
+    
+    <script>
+        function fn_add(){
+
+            var sum = parseInt(document.getElementById("first").value) + parseInt(document.getElementById("second").value);
+            document.getElementById("output").innerHTML = sum;
+            
+        }
+        function fn_sub(){
+
+            var sum = parseInt(document.getElementById("first").value) - parseInt(document.getElementById("second").value);
+            document.getElementById("output").innerHTML = sum;
+
+        }
+            function fn_mul(){
+
+            var sum = parseInt(document.getElementById("first").value) * parseInt(document.getElementById("second").value);
+            document.getElementById("output").innerHTML = sum;
+
+        }
+            function fn_div(){
+
+            var sum = parseInt(document.getElementById("first").value) / parseInt(document.getElementById("second").value);
+            document.getElementById("output").innerHTML = sum;
+
+        }
+    </script>
+</body>
+</html>

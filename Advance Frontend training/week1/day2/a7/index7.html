@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List </title>
+
+    <style>
+        table{
+            padding: 3px;
+            /* border: 2px solid black; */
+        }
+        td{
+            border: 2px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="addTable()"> add table data</button>
+
+    <table id="table">
+        
+
+    </table>
+
+    <script>
+        var teble = document.getElementById("table");
+        var arr = ['ReactJs', 'AngularJs', 'HTML', 'CSS', 'JQuery'];
+        var count = 0;
+        function addTable(){
+            
+            if(count == arr.length){
+                
+            }
+            else{
+
+                document.getElementById("table").innerHTML += "<tr><td>" + parseInt(count+1) + "</td> <td>" + arr[count] + " </td></tr>"
+                count ++;
+            }
+        }
+    </script>
+</body>
+</html>

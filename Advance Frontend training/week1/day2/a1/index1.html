@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+</head>
+<body>
+
+    <fieldset>
+        <legend>Eployee Data</legend>
+        
+        Username  :  <input type="text" id="cname"  name="cname"  required/>
+        <br/><br/>
+        
+        Password  :  <input type="password" id="cpass"  name="cpass"  required/>
+        <br/><br/>
+
+        <input type="button"  value="Login"   onclick="fn_saveData()" />
+        
+        <p id="output"></p>
+
+    </fieldset>
+
+    <script>
+
+        function fn_saveData(){
+            
+            var user={
+                uname: "admin",
+                upass: "test"
+            }
+            var uname = document.getElementById("cname").value;
+            var upass = document.getElementById("cpass").value;
+    
+            if(uname == user.uname && upass == user.upass){
+                document.getElementById("output").innerHTML = "Welcome " + uname;
+                document.getElementById("output").style.color = "green";
+            }
+            else{
+                document.getElementById("output").innerHTML = "Invalid user or password";
+                document.getElementById("output").style.color = "red";
+
+            }
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
